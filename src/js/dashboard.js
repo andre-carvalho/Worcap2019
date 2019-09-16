@@ -92,7 +92,7 @@ var buildCharts=function(dimensions, groups) {
         .group(removeLittlestValues(groups["time"]));
 
     pieChart
-        .width(window.innerWidth*0.3)
+        .width(window.innerWidth*0.25)
         .height(300)
         .innerRadius(40).externalLabels(15).externalRadiusPadding(30).drawPaths(false)
         .legend(dc.legend())
@@ -106,7 +106,7 @@ var buildCharts=function(dimensions, groups) {
     tableChart
         .dimension(groups["table"])
         .sortBy(function (d) {
-            return d.key;
+            return d.value.total;
         })
         .group(function (d) {
             return d.key.split("/")[1];
@@ -155,7 +155,7 @@ var removeLittlestValues=function(sourceGroup) {
 };
 
 // use odd page size to show the effect better
-var ofs = 0, pag = 17;
+var ofs = 0, pag = 30;
 
 var updateOffset=function() {
     var totFilteredRecs = cf.groupAll().value();
