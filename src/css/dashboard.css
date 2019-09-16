@@ -1,0 +1,20 @@
+.dc-chart { font-size: 12px; }
+.the-table{
+    width: -webkit-fill-available;
+}
+.dc-data-table{
+    width: 100%;
+    clear: both;
+    padding: 5%;
+}
+.dc-table-head{
+    color: white;
+    font-size: larger;
+    background-color: cadetblue;
+}
+.dc-table-group {
+    color: black;
+    background-color: #c2dbde;
+    text-align: center;
+    font-weight: bold;
+}

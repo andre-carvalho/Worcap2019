@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>DC dashboard sample</title>
+
+    <!-- css from third party -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/bootstrap-3.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="libs/dc-2.1/dc.css" />
+
+    <!-- our css styles -->
+    <link rel="stylesheet" type="text/css" href="css/dashboard.css" />
+
+    <!-- third party libraries -->
+    <script src="libs/d3/v3/d3.js"></script>
+    <script src="libs/crossfilter/crossfilter.js"></script>
+    <script src="libs/dc-2.1/dc.js"></script>
+</head>
+
+<body>
+    <div>
+        <div style="width: 600px;">
+            <div id="mystats" class="dc-data-count" style="float: right">
+                <span class="filter-count"></span> selected out of <span class="total-count"></span> | <a href="javascript:dc.filterAll();
+                  dc.renderAll();">Reset All</a>
+            </div>
+        </div>
+
+        <div style="clear: both; padding-top: 20px;">
+            <div>
+                <div id="line"></div>
+                <div id="pie"></div>
+            </div>
+        </div>
+        
+
+        <div class="dc-data-table">
+            <div id="paging">
+                Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
+                <input id="last" class="btn" type="Button" value="Last" onclick="javascript:last()" />
+                <input id="next" class="btn" type="button" value="Next" onclick="javascript:next()"/>
+            </div>
+            <table class="the-table" id="mytable">
+            </table>
+        </div>
+    </div>
+
+    <!-- our js code -->
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
