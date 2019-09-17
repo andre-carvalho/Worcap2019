@@ -107,8 +107,8 @@ let dashboard={
         this.pieChart
             .width(window.innerWidth*0.25)
             .height(300)
-            //.innerRadius(40).externalLabels(15).externalRadiusPadding(30).drawPaths(false)
-            //.legend(dc.legend())
+            .innerRadius(40).externalLabels(15).externalRadiusPadding(30).drawPaths(false)
+            .legend(dc.legend())
             .dimension(dimensions["uf"])
             .group(dashboard.removeLittlestValues(groups["uf"]));
     },
@@ -163,13 +163,13 @@ let dashboard={
 
     buildCharts(dimensions, groups) {
 
-        //this.buildCountChart();
+        this.buildCountChart();
         
-        //this.buildBarChart(dimensions, groups);
+        this.buildBarChart(dimensions, groups);
         
-        //this.buildPieChart(dimensions, groups);
+        this.buildPieChart(dimensions, groups);
 
-        //this.buildDataTableChart(groups);
+        this.buildDataTableChart(groups);
 
         // render charts
         dc.renderAll();
