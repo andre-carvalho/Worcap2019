@@ -84,3 +84,7 @@ https://www.tutorialspoint.com/dcjs/dcjs_dashboard_working_example.htm
 - Atribuindo as dimensões do dado às dimensões do gráfico
 - Finalmente desenhando
 - Labels, Legendas, ...
+
+
+https://andre-carvalho.github.io/Worcap2019/dashboard.html
+
