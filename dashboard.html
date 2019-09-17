@@ -18,14 +18,14 @@
 
 <body>
     <div>
-        <div style="width: 600px;">
-            <div id="mystats" class="dc-data-count" style="float: right">
-                <span class="filter-count"></span> selected out of <span class="total-count"></span> | <a href="javascript:dc.filterAll();
-                  dc.renderAll();">Reset All</a>
+        <div class="info-ctrl">
+            <div id="mystats" class="dc-data-count">
+                <span class="filter-count"></span> selected out of <span class="total-count"></span> |
+                <a href="javascript:dc.filterAll(); dc.renderAll();">Reset All</a>
             </div>
         </div>
 
-        <div style="clear: both; padding-top: 20px;">
+        <div class="main-charts">
             <div>
                 <div id="line"></div>
                 <div id="pie"></div>
@@ -34,10 +34,10 @@
         
 
         <div class="dc-data-table">
-            <div id="paging">
+            <div id="paging" style="display: none;">
                 Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
-                <input id="last" class="btn" type="Button" value="Last" onclick="javascript:last()" />
-                <input id="next" class="btn" type="button" value="Next" onclick="javascript:next()"/>
+                <input id="last" class="btn" type="Button" value="Last" onclick="javascript:dashboard.last()" />
+                <input id="next" class="btn" type="button" value="Next" onclick="javascript:dashboard.next()"/>
             </div>
             <table class="the-table" id="mytable">
             </table>

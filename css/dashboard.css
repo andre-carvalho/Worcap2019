@@ -1,4 +1,20 @@
-.dc-chart { font-size: 12px; }
+.info-ctrl{
+    width: 100%;
+}
+.main-charts{
+    clear: both;
+    padding-top: 20px;
+}
+
+.dc-chart {
+    font-size: 12px;
+}
+.dc-data-count{
+    text-align: center;
+    float: unset !important;
+    font-size: xx-large;
+}
+
 .the-table{
     width: -webkit-fill-available;
 }
