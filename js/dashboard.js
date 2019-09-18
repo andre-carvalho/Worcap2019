@@ -108,7 +108,7 @@ let dashboard={
         this.pieChart
             .width(window.innerWidth*0.25)
             .height(300)
-            .innerRadius(40).externalLabels(15).externalRadiusPadding(30).drawPaths(true)
+            .innerRadius(40).externalLabels(15).externalRadiusPadding(30).drawPaths(false)
             .legend(dc.legend())
             .dimension(dimensions["uf"])
             .group(dashboard.removeLittlestValues(groups["uf"]));
